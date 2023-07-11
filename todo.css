@@ -1,0 +1,359 @@
+/* -----body part -------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d4d6dd;
+    font-family: sans-serif;
+}
+
+/*---- container part -------*/
+#container {
+    width: 50%;
+    background-color: white;
+    margin: 3%;
+    margin-left: 25%;
+    justify-content: center;
+    border-radius: 5px;
+    height: auto;
+    border-top: 1px red solid;
+    position: relative;
+}
+
+/* ---here the style of task div--- */
+#task-div {
+    background-color: #d4d6dd;
+    width: 95%;
+    margin-left: 2.5%;
+    border-radius: 5px;
+    margin-top: 3%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+/* memo icon style */
+#memo {
+    font-size: xx-large;
+    margin: auto;
+}
+
+
+/* input tag style */
+#task {
+    background-color: transparent;
+    width: 85%;
+    border: none;
+    padding-top: 3%;
+    outline: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* circle plus icon style */
+#circle-plus {
+    margin: auto;
+}
+
+/* complete task style */
+
+#complete-task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: .5%;
+    color: #b1a8a9;
+    flex-wrap: wrap;
+}
+
+/* ----Here i have styled our all complete text------------ */
+#complete {
+    color: #b1a8a9;
+    margin-right: 55%;
+}
+
+
+/*------- horizontal line style ----------------*/
+hr {
+    width: 95%;
+}
+
+/*----------------- check mark style ---------------------*/
+#check-mark {
+    margin-left: 3%;
+    margin-top: .2%;
+    color: #b1a8a9;
+}
+
+/*------------------- counter part style---------------------- */
+#counter-part {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: #b1a8a9;
+    flex-wrap: wrap;
+}
+
+/*----------------- here i have styled our counter text--------------- */
+#task-counter {
+    color: black;
+}
+
+/* ---------------------here i have styled our task left text---------------------  */
+#task-left {
+    text-align: left;
+    margin-right: 50%;
+}
+
+/* ---------------------here i have styled our All text only ---------------------  */
+#all {
+    color: black;
+}
+
+/*---------------- style of the list section -------------------*/
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* ----------------------------style when list is not check-------------------------- */
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url('radio.png');
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 8px;
+}
+
+/*------------------------ style is checked------------------------- */
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* after the check the image will show */
+ul li.checked::before {
+    background-image: url('checked.png');
+}
+
+/* style of the span tag where cross icon will show */
+ul li span {
+    position: absolute;
+    right: 10%;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    visibility: hidden;
+}
+
+/* here is hover over the list tag */
+ul li:hover span {
+    visibility: visible;
+}
+
+/* make our site responsive from 600px to 1200px */
+@media (max-width: 1200px) {
+    #container {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #task-div {
+        height: auto;
+    }
+
+    #task {
+        width: 100%;
+    }
+
+    #complete-task {
+        margin-top: 2%;
+    }
+
+    #complete {
+        margin-right: auto;
+    }
+
+    #task-left {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    #container {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #task-div {
+        height: auto;
+    }
+
+    #task {
+        width: 100%;
+    }
+
+    #complete-task {
+        margin-top: 2%;
+    }
+
+    #complete {
+        margin-right: auto;
+    }
+
+    #task-left {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    #container {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #task-div {
+        height: auto;
+    }
+
+    #task {
+        width: 100%;
+    }
+
+    #complete-task {
+        margin-top: 2%;
+    }
+
+    #complete {
+        margin-right: auto;
+    }
+
+    #task-left {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    #container {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    #task-div {
+        height: auto;
+    }
+
+    #task {
+        width: 100%;
+    }
+
+    #complete-task {
+        margin-top: 2%;
+    }
+
+    #complete {
+        margin-right: auto;
+    }
+
+    #task-left {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #container {
+        width: 65%;
+        margin-left: 17%;
+    }
+
+    #task-div {
+        height: auto;
+    }
+
+    #task {
+        width: 100%;
+    }
+
+    #complete-task {
+        margin-top: 2%;
+    }
+
+    #complete {
+        margin-right: auto;
+    }
+
+    #task-left {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    #container {
+        width: 65%;
+        margin-left: 17%;
+    }
+
+    #task-div {
+        height: auto;
+    }
+
+    #task {
+        width: 100%;
+    }
+
+    #complete-task {
+        margin-top: 2%;
+    }
+
+    #complete {
+        margin-right: auto;
+    }
+
+    #task-left {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    #container {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    #task-div {
+        height: auto;
+    }
+
+    #task {
+        width: 100%;
+    }
+
+    #complete-task {
+        margin-top: 2%;
+    }
+
+    #complete {
+        margin-right: auto;
+    }
+
+    #task-left {
+        margin-right: auto;
+    }
+}
